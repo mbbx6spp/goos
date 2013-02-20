@@ -7,6 +7,21 @@ something) and since I am convinced the best way to grow OO software is to
 make it more functional, I thought I would provide my own twist on this book
 for coworkers :)
 
+## Getting Started
+
+Since my coworkers are mostly Ruby/Rails devs here is how to get started on
+OS X (assuming you have Homebrew setup already and a reasonable JDK installed):
+
+1. `brew update`
+2. `brew install scala` or if you installed Scala a while ago `brew upgrade scala`
+3. `brew install sbt` should be 0.12.2 or higher if not: `brew upgrade sbt`
+4. `git clone https://github.com/mbbx6spp/goos.git`
+5. `cd goos`
+6. `sbt update`
+
+If there is any code in here by the time you try it read through the code and
+comments then you can `sbt compile` and `sbt test`.
+
 ## License
 
 The initial Scala versions of the code will be fairly direct translations
